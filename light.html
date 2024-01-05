@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Bulb</title>
+    <style>
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn{
+            padding: 20px;
+            background-color: green;
+        }
+       
+    </style>
+</head>
+<body style="background-color: black;">
+    <img id = "bulb" src="img/bulb-off-image.png" alt="" class="center">
+    <button id="toggleBtn" class="center btn">Turn on</button>
+    
+
+    <script>
+        let btn = document.getElementById('toggleBtn')
+        let bulb = document.getElementById('bulb')
+        btn.addEventListener('click',toggleBulb)
+        function toggleBulb(e){
+            bulb.src = "img/bulb-on-image.png"
+        }
+    </script>
+</body>
+</html>
