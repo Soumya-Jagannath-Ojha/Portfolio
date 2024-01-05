@@ -195,7 +195,7 @@ a {
     color: white;
 }
 a:hover{
-    color: rgb(239, 104, 239);
+    /* color: rgb(239, 104, 239); */
     font-size: 1.82rem;
 }
 
