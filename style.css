@@ -139,6 +139,10 @@ main .section{
     width: 240px;
 
 }
+#projects h2{
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
 
 
 .contact{
@@ -221,18 +225,6 @@ footer {
 }
 
 
-@media only screen and (max-width: 600px) {
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .leftSection{
-        flex-direction: column-reverse;
-    }
-
-    
-}
-
 .project-image {
     margin-top: 25px;
     height: 250px;
@@ -270,69 +262,13 @@ a:hover{
 .menu-icon{
     display: none;
 }
-@media only screen and (max-width: 600px) {
-    /* .hamburger {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: white;
-        font-size: 30px;
-        margin: 20px;
-        align-self: flex-end;
-    } */
 
-    /* ul {
-        display: flex;
-        flex-direction: row;
-        background-color: #2b2c38;
-        margin: 0ppx;
+
+@media screen and (max-width: 500px){
+    body{
+        background-color: red;
     }
-
-    ul.show {
-        display: block;
-    }
-
-    nav {
-        display: none;
-        
-        background-color: #2b2c38;
-    }
-
-    .logo {
-        display: none;
-    } */
-   
-    /* .hero-text{
+    .firstSection{
         flex-direction: column-reverse;
-    } */
-
-    nav ul li{
-        position: absolute;
-        width: 100%;
-        background: #000;
-        color: #fff;
-        left: 0;
-        top: 100%;
-        text-align: center;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s;
-        
     }
-    nav .logo{
-        width: 150px;
-    }
-    nav ul li{
-        margin: 10px;
-        font-size: 14px;
-    }
-    .menu-icon{
-        display: block;
-        width: 30px;
-    }
-    .show-menu{
-        max-height: 60px;
-    }
-    
-    
 }
