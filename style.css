@@ -1,115 +1,103 @@
-body {
-    font-family: 'Poppins', sans-serif;
+* {
     margin: 0;
+    padding: 0;
 }
 
-section {
-    background-color: white;
-}
-
-.hero {
-    background-color: #1c1d25;
-    height: 100vh;
+body {
+    background-color: #161414;
     color: white;
-    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
 }
-
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 80px;
-}
-
-nav {
+nav{
     display: flex;
-    justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    width: 500px;
     justify-content: space-around;
-    font-size: 30px;
+    align-items: center;
+    height: 70px;
+    background-color: #5753b0;
 }
-
-li {
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
     text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    /* color: rgb(168, 92, 238); */
+    font-size: 1.02;
     
 }
 
-h1 {
-    font-size: 60px;
-    margin: 0;
+main .section{
+    border: 0;
+    background-color: #9c97f1;
+    height: 1.2px;
+    margin: 8px 84px; 
 }
-
-h2 {
-    font-size: 50px;
+.left{
+    font-size: 1.5rem;
 }
-
-p {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 300;
-}
-
-.subtext {
-    font-size: 15px;
-    font-weight: 300;
-}
-
-.hero-area {
+.firstSection{
     display: flex;
-    height: 100%;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
+    margin: 35px 0;
+    
+}
+.firstSection > div{
+    width: 45%;
+}
+.leftSection{
+    font-size: 2.7rem;  
+}
+.leftSection .buttons{
+    padding: 35px 0;
+}
+.leftSection .btn{
+    padding: 12px;
+    background: #565be7;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.rightSection img{
+   width: 80%;
+   margin: 50px 0;
+}
+.purple{
+    /* color: rgb(169, 93, 240); */
+    color: #10DBF6;
+}
+#element{
+    color: #10DBF6;
+}
+.secondSection{
+    max-width: 80vh;
+    margin: auto;
 }
 
-.hero-text {
-    margin-left: 60px;
-    margin-bottom: 200px;
-}
 
-.button {
-    width: 200px;
-    height: 55px;
-    border-radius: 30px;
-    background-color: coral;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-    padding-top: 5px;
-    margin-top: 20px;
-}
 
-.button:hover {
-    background-color: #ef744b;
-}
 
-.button:active {
-    background-color: #A9A9A9;
-    color: #808080;
-}
 
-.socials {
-    padding-bottom: 200px;
-}
-
-.logo {
-    height: 80px;
-    margin: 30px;
-    font-family: 'Popins', sans-serif;
-    font-size: 35px;
-}
-.social {
-    margin: 20px;
-}
 
 .sub-section {
     display: flex;
     justify-content: space-around;
     padding: 80px;
+    height: 480px;
+    font-size: 25px;
+}
+.sub-section .information{
+    padding: 30px;
 }
 
 .sub-section-alternative {
@@ -136,6 +124,10 @@ p {
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 10px;
 }
+.project-card p{
+    padding: 12px;
+}
+
 
 .project-container {
     display: flex;
@@ -144,28 +136,99 @@ p {
 .project-image{
     flex-wrap: wrap;
     height: 250px;
-    width: 250px;
+    width: 240px;
 
 }
 
-#element{
-    color: blueviolet;
-}
-.purple{
-    color:blueviolet;
-}
+
 .contact{
     display: flex;
 }
 
+form{
+    width: 80%;
+    margin: auto;
+}
+input{
+    padding: 10px;
+    width: 676px;
+}
+textarea{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.skill{
+    height:100vh;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+.btn-container{
+    margin-top: 10px;
+    height: 420px;
+    width: 420px;
+    border: 10px solid black;
+}
+
+.container{
+    border: 1px solid #EBD1D1;
+    height: 500px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    margin: 40px 40px 60px 45px;
+    border-radius: 22px;
+    border: 2.5px solid rgb(247, 139, 247);
+}
+.first-container{
+    margin-top: 60px;
+    display: block;
+    flex-wrap: wrap;
+}
+.skill h2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.item{
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+footer {
+    /* background-color: #200E3A; */
+    background-color: rgb(169, 93, 240);
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+.button{
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     .project-container {
         display: flex;
         flex-wrap: wrap;
     }
-    .hero-text{
+    .leftSection{
         flex-direction: column-reverse;
     }
 
@@ -174,46 +237,43 @@ p {
 
 .project-image {
     margin-top: 25px;
-    width: 250px;
-    /* border-radius: 125px; */
+    height: 250px;
+    /* width: 250px; */
     border-radius: 15px;
     
 }
 
 hr {
+    margin-top: 0px;
     margin-left: 20px;
     margin-right: 20px;
+    
 }
 
 .project-link {
     text-decoration: none;
     color: #ef744b;
+    
 }
+
 
 a {
     text-decoration: none;
     color: white;
 }
 a:hover{
-    /* color: rgb(239, 104, 239); */
-    font-size: 1.82rem;
+    font-size: 1.02rem;
 }
 
 .project-link:hover {
     color:rgb(239, 104, 239);
     font-size: 1.02rem;
 }
-.hamburger {
+.menu-icon{
     display: none;
 }
-
-.hamburger:focus{
-    outline: 0;
-}
-
-
-@media only screen and (max-width: 1000px) {
-    .hamburger {
+@media only screen and (max-width: 600px) {
+    /* .hamburger {
         display: block;
         border: 0;
         background-color: transparent;
@@ -221,9 +281,9 @@ a:hover{
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
-    }
+    } */
 
-    ul {
+    /* ul {
         display: flex;
         flex-direction: row;
         background-color: #2b2c38;
@@ -242,9 +302,39 @@ a:hover{
 
     .logo {
         display: none;
-    }
+    } */
    
-    .hero-text{
+    /* .hero-text{
         flex-direction: column-reverse;
+    } */
+
+    nav ul li{
+        position: absolute;
+        width: 100%;
+        background: #000;
+        color: #fff;
+        left: 0;
+        top: 100%;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        
     }
+    nav .logo{
+        width: 150px;
+    }
+    nav ul li{
+        margin: 10px;
+        font-size: 14px;
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
+    }
+    .show-menu{
+        max-height: 60px;
+    }
+    
+    
 }
