@@ -125,13 +125,14 @@ main .section{
     margin: 10px;
 }
 .project-card p{
-    padding: 12px;
+    padding: 8px;
 }
 
 
 .project-container {
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-start;
+    flex-wrap: wrap;
 }
 .project-image{
     flex-wrap: wrap;
@@ -164,6 +165,8 @@ textarea{
 .skill{
     height:100vh;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 .btn-container{
@@ -180,7 +183,7 @@ textarea{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;  
-    margin: 40px 40px 60px 45px;
+    margin: 100px 40px 60px 45px;
     border-radius: 22px;
     border: 2.5px solid rgb(247, 139, 247);
 }
@@ -264,11 +267,50 @@ a:hover{
 }
 
 
-@media screen and (max-width: 500px){
-    body{
-        background-color: red;
-    }
+@media screen and (max-width: 1020px){
     .firstSection{
         flex-direction: column-reverse;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 15px;
+    }
+    .leftSection{
+        flex-direction: column-reverse;
+    }
+    .skill{
+        height: 20vh;
+    }
+
+
+}
+@media screen and(max-width: 1300px){
+
+    .container{
+        height: 100px;
+        margin: 100px 40px 60px 45px;;
+    }
+    
+    .container{
+        margin: 180px 40px 60px 45px;
+    }
+    .skill h2{
+        display: none;
+        margin-bottom: 3px;
+    }
+    .sub-section{
+        font-size: 16px;
+        
+    }
+    .sub-section img{
+        width: 150px;
+        
+    }
+
+}
+
+
