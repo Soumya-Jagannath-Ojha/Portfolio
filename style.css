@@ -112,6 +112,7 @@ main .section{
     flex-direction: column;
     text-align: center;
     padding: 80px;
+    /* flex-wrap: wrap; */
 }
 
 .headshot {
@@ -148,7 +149,7 @@ main .section{
 
 }
 #projects h2{
-    margin-top: 2px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
@@ -172,9 +173,9 @@ textarea{
 .skill{
     height:100vh;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
     
+    /* flex-wrap: wrap; */
+     
 }
 .skill h2{
     display: flex;
@@ -182,6 +183,7 @@ textarea{
     flex-wrap: wrap;
     margin-top: 100px;
 }
+
 
 .btn-container{
     margin-top: 10px;
@@ -206,12 +208,7 @@ textarea{
     display: block;
     flex-wrap: wrap;
 }
-.skill h2{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
+
 
 .item{
     height: 80px;
@@ -313,10 +310,10 @@ a:hover{
         display: flex;
         flex-wrap: wrap;
     }
-    .skill h2{
+    /* .skill h2{
         display: none;
         margin-bottom: 3px;
-    }
+    } */
     .sub-section{
         font-size: 16px;
         
@@ -336,18 +333,18 @@ a:hover{
 }
 
 @media only screen and (max-width: 1000px) {
-    /* .project-container {
+    .project-container {
         display: flex;
         flex-wrap: wrap;
         font-size: 15px;
-    } */
-    /* .skill{
+    } 
+     .skill{
         height: 50vh;
-    } */
-
-    .skill{
-        height: 100vh;
     }
+
+    /* .skill{
+        height: 10vh;
+    } */
 
     
 }
@@ -359,16 +356,27 @@ a:hover{
     .sub-section .information p{
         font-size: 10px;
     }
+    .sub-section-alternative{
+        padding: 138px;
+    }
 
-    .project-container{
+    /* .project-container{
         display: flex;
         flex-wrap: nowrap;
+    } */
+    .project-container {
+        margin-top: 235px;
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .skill{
-        height: 50vh;
+        height: 100vh;
     }
+
+    .sub-section .information p {
+        font-size: 12px;
+    }
+    
 }
 
