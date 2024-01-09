@@ -69,7 +69,7 @@ main .section{
 
 }
 .rightSection img{
-   width: 80%;
+   border-radius: 25%;
    margin: 50px 0;
 }
 .purple{
@@ -338,14 +338,13 @@ a:hover{
         flex-wrap: wrap;
         font-size: 15px;
     } 
-     .skill{
+     /* .skill{
         height: 50vh;
-    }
+    } */
 
     /* .skill{
         height: 10vh;
     } */
-
     
 }
 
@@ -370,13 +369,25 @@ a:hover{
 }
 
 @media screen and (max-width: 500px){
-    .skill{
+    /* .skill{
         height: 100vh;
-    }
+    } */
 
     .sub-section .information p {
         font-size: 12px;
     }
     
+}
+
+@media screen and(min-width: 600px) and (max-width: 1000px){
+    .skill{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .skill{
+        height: 50vh;
+    }
 }
 
