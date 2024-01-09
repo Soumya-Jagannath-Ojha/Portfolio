@@ -90,14 +90,21 @@ main .section{
 
 
 .sub-section {
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
     padding: 80px;
     height: 480px;
-    font-size: 25px;
+    font-size: 25px; */
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
 }
 .sub-section .information{
     padding: 30px;
+}
+
+.sub-section .information p{
+    font-size: 24px;
 }
 
 .sub-section-alternative {
@@ -131,8 +138,8 @@ main .section{
 
 .project-container {
     display: flex;
-    justify-content:flex-start;
-    flex-wrap: wrap;
+    justify-content:space-around;
+    
 }
 .project-image{
     flex-wrap: wrap;
@@ -169,6 +176,13 @@ textarea{
     flex-wrap: wrap;
     
 }
+.skill h2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
 .btn-container{
     margin-top: 10px;
     height: 420px;
@@ -267,6 +281,10 @@ a:hover{
 }
 
 
+.footer{
+    display: flex;
+}
+
 @media screen and (max-width: 1020px){
     .firstSection{
         flex-direction: column-reverse;
@@ -274,11 +292,11 @@ a:hover{
 }
 
 @media only screen and (max-width: 600px) {
-    .project-container {
+    /* .project-container {
         display: flex;
         flex-wrap: wrap;
         font-size: 15px;
-    }
+    } */
     .leftSection{
         flex-direction: column-reverse;
     }
@@ -289,14 +307,11 @@ a:hover{
 
 }
 @media screen and(max-width: 1300px){
-
     .container{
-        height: 100px;
-        margin: 100px 40px 60px 45px;;
-    }
-    
-    .container{
-        margin: 180px 40px 60px 45px;
+        height: 330px;
+        margin: 100px 40px 60px 45px;
+        display: flex;
+        flex-wrap: wrap;
     }
     .skill h2{
         display: none;
@@ -310,7 +325,50 @@ a:hover{
         width: 150px;
         
     }
+    .sub-section .information p{
+        font-size: 15px;
+    }
+    .skill{
+        height: 50vh;
+    }
+
 
 }
 
+@media only screen and (max-width: 1000px) {
+    /* .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 15px;
+    } */
+    /* .skill{
+        height: 50vh;
+    } */
+
+    .skill{
+        height: 100vh;
+    }
+
+    
+}
+
+@media screen and (max-width: 800px){
+    .footer{
+        height: 300px;
+    }
+    .sub-section .information p{
+        font-size: 10px;
+    }
+
+    .project-container{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .skill{
+        height: 50vh;
+    }
+}
 
