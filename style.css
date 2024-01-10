@@ -284,7 +284,10 @@ a:hover{
 
 .footer{
     display: flex;
+    justify-content: center;
 }
+
+
 
 @media screen and (max-width: 1020px){
     .firstSection{
@@ -362,9 +365,19 @@ a:hover{
 @media screen and (max-width: 800px){
     .footer{
         height: 300px;
+        width: 200px;
     }
-    .sub-section .information p{
-        font-size: 10px;
+    textarea{
+        size: 2rem;
+    }
+
+    .sub-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 2px;
+    }
+    .information p{
+        font-size: 12px;
     }
     .sub-section-alternative{
         padding: 138px;
@@ -377,6 +390,10 @@ a:hover{
     .project-container {
         margin-top: 235px;
     }
+    textarea{
+        padding: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -384,9 +401,9 @@ a:hover{
         height: 100vh;
     } */
 
-    /* .sub-section .information p {
+    .sub-section .information p {
         font-size: 12px;
-    } */
+    }
     
 }
 
