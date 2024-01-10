@@ -84,37 +84,6 @@ main .section{
     max-width: 80vh;
     margin: auto;
 }
-
-
-
-
-
-
-.sub-section {
-    /* display: flex;
-    justify-content: space-around;
-    padding: 80px;
-    height: 480px;
-    font-size: 25px; */
-    display: flex;
-    justify-content: space-around;
-    padding: 80px;
-}
-.sub-section .information{
-    padding: 30px;
-}
-
-.sub-section .information p{
-    font-size: 24px;
-}
-
-.sub-section-alternative {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 80px;
-}
-
 .headshot {
     width: 300px;
     border-radius: 150px;
@@ -126,6 +95,67 @@ main .section{
     align-items: center;
 }
 
+
+/* About section */
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+.sub-section .information{
+    padding: 30px;
+}
+
+.sub-section .information p{
+    /* font-size: 24px; */
+    font-size: 2.1rem;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+
+/* Skill Section */
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100vh;
+    text-align: center;
+     
+}
+.skill h2{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.first-container{
+    margin-top: 60px;
+    display: block;
+    flex-wrap: wrap;
+}
+.container{
+    border: 1px solid #EBD1D1;
+    height: 500px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    margin: 100px 40px 60px 45px;
+    border-radius: 22px;
+    border: 2.5px solid rgb(247, 139, 247);
+}
+
+
+
+/* Project Section */
 .project-card {
     width: 300px;
     height: 500px;
@@ -135,8 +165,6 @@ main .section{
 .project-card p{
     padding: 8px;
 }
-
-
 .project-container {
     display: flex;
     justify-content:space-around;
@@ -152,104 +180,11 @@ main .section{
     margin-top: 0px;
     margin-bottom: 10px;
 }
-
-
-
-
-input{
-    padding: 10px;
-    width: 676px;
-}
-textarea{
-    resize: none;
-    padding: 10px;
-    font-family: 'Poppins', sans-serif;
-}
-.skill{
-    height:100vh;
-    text-align: center;
-     
-}
-.skill h2{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
-}
-
-
-.btn-container{
-    margin-top: 10px;
-    height: 420px;
-    width: 420px;
-    border: 10px solid black;
-}
-
-.container{
-    border: 1px solid #EBD1D1;
-    height: 500px;
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;  
-    margin: 100px 40px 60px 45px;
-    border-radius: 22px;
-    border: 2.5px solid rgb(247, 139, 247);
-}
-.first-container{
-    margin-top: 60px;
-    display: block;
-    flex-wrap: wrap;
-}
-
-.leftSection a:hover{
-    font-size: 1.18rem;
-}
-
-.item{
-    height: 80px;
-    width: 80px;
-    margin: 5px;
-    padding: 5px;
-    color: white;
-    border-radius: 10px;
-}
-
-
-.button{
-    width: 200px;
-    height: 55px;
-    border-radius: 30px;
-    background-color: coral;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-    padding-top: 5px;
-    margin-top: 20px;
-}
-
-
-.project-image {
-    margin-top: 25px;
-    height: 250px;
-    /* width: 250px; */
-    border-radius: 15px;
-    
-}
-
-hr {
-    margin-top: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-}
-
 .project-link {
     text-decoration: none;
     color: #ef744b;
     
 }
-
 
 a {
     text-decoration: none;
@@ -263,20 +198,79 @@ a:hover{
     color:rgb(239, 104, 239);
     font-size: 1.02rem;
 }
-.menu-icon{
-    display: none;
+.project-image {
+    margin-top: 25px;
+    height: 250px;
+    /* width: 250px; */
+    border-radius: 15px;
+    
 }
 
 
 
+/* Contact Section */
+.btn-container{
+    margin-top: 10px;
+    height: 420px;
+    width: 420px;
+    border: 10px solid black;
+}
+
+
+.leftSection a:hover{
+    font-size: 1.18rem;
+}
+
+.item{
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+.button{
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
 .contact-me {
     display: flex;
     justify-content: center;
     background: aqua;
     align-items: center;
     flex-direction: column;
-}
+} 
 
+.contact-container{
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+input,textarea{
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.bttn{
+    background-color: #ef744b;
+    color: wheat;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 1020px){
@@ -284,44 +278,29 @@ a:hover{
         flex-direction: column-reverse;
         
     }
-    /* .firstSection > div {
-        width: 70%;
-    } */
-    /* .sub-section .information p{
-        font-size: 11px;
-    } */
 }
 
 @media only screen and (max-width: 600px) {
-    /* .project-container {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 15px;
-    } */
     .leftSection{
         flex-direction: column-reverse;
     }
-    .skill{
+    /* .skill{
         height: 20vh;
-    }
+    } */
 
 
 }
-@media screen and(max-width: 1300px){
+@media only screen and(max-width: 1300px){
     .container{
         height: 330px;
         margin: 100px 40px 60px 45px;
         display: flex;
         flex-wrap: wrap;
     }
-    /* .skill h2{
-        display: none;
-        margin-bottom: 3px;
-    } */
-    .sub-section{
+    /* .sub-section{
         font-size: 16px;
         
-    }
+    } */
     .sub-section img{
         width: 150px;
         
@@ -352,28 +331,16 @@ a:hover{
     
 }
 
-@media screen and (max-width: 800px){
+@media only screen and (max-width: 800px){
     
-    textarea{
-        size: 2rem;
-    }
-
     .sub-section {
         display: flex;
         justify-content: space-around;
         padding: 2px;
     }
-    .information p{
-        font-size: 12px;
-    }
     .sub-section-alternative{
         padding: 138px;
     }
-
-    /* .project-container{
-        display: flex;
-        flex-wrap: nowrap;
-    } */
     .project-container {
         margin-top: 235px;
     }
@@ -383,26 +350,38 @@ a:hover{
     }
 }
 
-@media screen and (max-width: 500px){
-    /* .skill{
+/* @media screen and (max-width: 500px){
+     .skill{
         height: 100vh;
-    } */
+    } 
 
     .sub-section .information p {
         font-size: 12px;
     }
     
-}
+} */
 
-@media screen and(min-width: 600px) and (max-width: 1000px){
+/* @media only screen and(min-width: 600px) and (max-width: 1000px){
     .skill{
         height: 100vh;
     }
-}
+} */
 
-@media screen and (max-width: 450px){
+/* @media screen and (max-width: 450px){
     .skill{
         height: 50vh;
     }
-}
+} */
 
+
+@media only screen and(max-width: 600px){
+    input, textarea{
+        font-size: 14px;
+    }
+    .sub-section .information p {
+        font-size: 1.5rem;
+    }
+    .skill{
+        height: 45vh;
+    }
+}
