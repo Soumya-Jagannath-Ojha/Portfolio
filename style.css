@@ -28,7 +28,6 @@ nav ul li a{
     color: white;
 }
 nav ul li a:hover{
-    /* color: rgb(168, 92, 238); */
     font-size: 1.02;
     
 }
@@ -75,7 +74,6 @@ main .section{
 }
 .purple{
     color: rgb(169, 93, 240);
-    /* color: #10DBF6; */
 }
 #element{
     color: #10DBF6;
@@ -107,7 +105,6 @@ main .section{
 }
 
 .sub-section .information p{
-    /* font-size: 24px; */
     font-size: 2.1rem;
 }
 
@@ -132,7 +129,6 @@ main .section{
 .skill h2{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-wrap: wrap;
     margin-top: 100px;
 }
@@ -211,17 +207,6 @@ a:hover{
 
 
 /* Contact Section */
-.btn-container{
-    /* margin-top: 10px;
-    height: 420px;
-    width: 420px;
-    border: 10px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-}
-
 .item{
     height: 80px;
     width: 80px;
@@ -245,27 +230,15 @@ a:hover{
 #contact-me {
     display: flex;
     justify-content: center;
-    background: aqua;
+    background: rgba(180, 74, 241, 0.634);
     align-items: center;
     flex-direction: column;
 } 
 
-.contact-container{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-}
 .contact-container h2{
     display: flex;
     justify-content: center;
 }
-/* .contact-form{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-} */
 input,textarea{
     padding: 10px;
     margin-bottom: 0;
@@ -286,15 +259,19 @@ input,textarea{
         flex-direction: column-reverse;
         
     }
+    .sub-section{
+        flex-direction: column-reverse;
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {
     .leftSection{
         flex-direction: column-reverse;
     }
-    /* .skill{
-        height: 20vh;
-    } */
+    .sub-section .information p{
+        font-size: 1.1rem;
+    }
 
 
 }
@@ -305,22 +282,11 @@ input,textarea{
         display: flex;
         flex-wrap: wrap;
     }
-    /* .sub-section{
-        font-size: 16px;
-        
-    } */
     .sub-section img{
         width: 150px;
         
     }
-    /* .sub-section .information p{
-        font-size: 15px;
-    } */
-    /* .skill{
-        height: 50vh;
-    } */
-
-
+   
 }
 
 @media only screen and (max-width: 1000px) {
@@ -329,23 +295,11 @@ input,textarea{
         flex-wrap: wrap;
         font-size: 15px;
     } 
-     /* .skill{
-        height: 50vh;
-    } */
-
-    /* .skill{
-        height: 10vh;
-    } */
+    
     
 }
 
 @media only screen and (max-width: 800px){
-    
-    /* .sub-section {
-        display: flex;
-        justify-content: space-around;
-        padding: 2px;
-    } */
     .sub-section-alternative{
         padding: 138px;
     }
@@ -360,45 +314,14 @@ input,textarea{
     .sub-section{
         padding: 0px;
     }
-    .sub-section .information p {
-        font-size: 1rem;
-    }
-}
-
-/* @media screen and (max-width: 500px){
-     .skill{
-        height: 100vh;
-    } 
-
-    .sub-section .information p {
-        font-size: 12px;
-    }
     
-} */
-
-/* @media only screen and(min-width: 600px) and (max-width: 1000px){
-    .skill{
-        height: 100vh;
-    }
-} */
-
-/* @media screen and (max-width: 450px){
-    .skill{
-        height: 50vh;
-    }
-} */
+}
 
 
 @media only screen and(max-width: 600px){
     input, textarea{
         font-size: 14px;
     }
-    /* .sub-section{
-        padding: 0px;
-    }
-    .sub-section .information p {
-        font-size: 1rem;
-    } */
     .skill{
         height: 45vh;
     }
