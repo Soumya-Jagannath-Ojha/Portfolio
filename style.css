@@ -153,7 +153,9 @@ main .section{
     border: 2.5px solid rgb(247, 139, 247);
 }
 
-
+.leftSection a:hover{
+    font-size: 1.18rem;
+}
 
 /* Project Section */
 .project-card {
@@ -210,15 +212,14 @@ a:hover{
 
 /* Contact Section */
 .btn-container{
-    margin-top: 10px;
+    /* margin-top: 10px;
     height: 420px;
     width: 420px;
-    border: 10px solid black;
-}
-
-
-.leftSection a:hover{
-    font-size: 1.18rem;
+    border: 10px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
 }
 
 .item{
@@ -239,8 +240,9 @@ a:hover{
     font-weight: 300;
     padding-top: 5px;
     margin-top: 20px;
+    margin-bottom: 55px;
 }
-.contact-me {
+#contact-me {
     display: flex;
     justify-content: center;
     background: aqua;
@@ -249,22 +251,28 @@ a:hover{
 } 
 
 .contact-container{
+    display: flex;
+    flex-direction: column;
     width: 80%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
-.contact-form{
+.contact-container h2{
+    display: flex;
+    justify-content: center;
+}
+/* .contact-form{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-}
+} */
 input,textarea{
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     box-sizing: border-box;
     width: 100%;
 }
-.bttn{
+.button{
     background-color: #ef744b;
     color: wheat;
     padding: 10px;
@@ -308,9 +316,9 @@ input,textarea{
     /* .sub-section .information p{
         font-size: 15px;
     } */
-    .skill{
+    /* .skill{
         height: 50vh;
-    }
+    } */
 
 
 }
@@ -333,11 +341,11 @@ input,textarea{
 
 @media only screen and (max-width: 800px){
     
-    .sub-section {
+    /* .sub-section {
         display: flex;
         justify-content: space-around;
         padding: 2px;
-    }
+    } */
     .sub-section-alternative{
         padding: 138px;
     }
@@ -347,6 +355,13 @@ input,textarea{
     textarea{
         padding: 5px;
         font-family: 'Poppins', sans-serif;
+    }
+
+    .sub-section{
+        padding: 0px;
+    }
+    .sub-section .information p {
+        font-size: 1rem;
     }
 }
 
@@ -378,9 +393,12 @@ input,textarea{
     input, textarea{
         font-size: 14px;
     }
-    .sub-section .information p {
-        font-size: 1.5rem;
+    /* .sub-section{
+        padding: 0px;
     }
+    .sub-section .information p {
+        font-size: 1rem;
+    } */
     .skill{
         height: 45vh;
     }
