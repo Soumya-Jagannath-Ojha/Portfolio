@@ -29,7 +29,7 @@
 
   <main>
       <section class="firstSection" id="Home">
-          <div class="leftSection">
+          <div class="leftSection hidden">
               Hi! My name is <span class="purple">Soumya</span>
               <div>and I am a passionate</div>
               <span id="element"></span>
@@ -44,7 +44,7 @@
       </section>
     
       <section class="sub-section" id="about-me">
-          <div class="information">
+          <div class="information hidden">
               <h1><span id="element">About Me</span></h1>
               <p>I am a passionate Full Stack Devloper who loves to explore new technology and build scalable applications.</p>
               <br><br>
@@ -57,7 +57,7 @@
       <section class="skill" id="skill" >
         <div><h1><span id="element">Technologies i know</span></h1></div>
           <div class="container">
-            <div class="first-container">
+            <div class="first-container hidden">
               <img src="Tech/Html.jpg" alt="Html" class="item">
               <img src="Tech/css.png" alt="css" class="item">
               <img src="Tech/js-logo.webp" alt="js" class="item">
@@ -66,7 +66,7 @@
               <img src="Tech/mysql.png" alt="sql" class="item">
               <img src="Tech/bootstrap.png" alt="boot" class="item">
             </div>
-              <div class="second-container">
+              <div class="second-container hidden">
               <img src="Tech/mongodb.png" alt="mongo" class="item">
               <img src="Tech/expressjs.png" alt="express" class="item">
               <img src="Tech/react.png" alt="react" class="item">
@@ -79,9 +79,9 @@
           </div>
       
     </section>
-      <section class="sub-section-alternative" id="projects">
+      <section class="sub-section-alternative " id="projects">
           <div><h1><span id="element">Projects i Made</span></h1></div>
-          <div class="project-container">
+          <div class="project-container hidden">
               <div class="project-card">
                   <img class="project-image" src="img/AmazonClone.png" alt="Project One Image"/>
                   <h3>Amazon Clone</h3>
@@ -124,11 +124,11 @@
         </form>
       </div>
       
-    <script src="src/app.js"></script>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
 
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
   </main>
   </body>
 </html>
