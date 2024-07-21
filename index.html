@@ -1,135 +1,161 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="shortcut icon" href="Me.jpeg" type="image/x-icon">
-    
-    <title>Portfolio</title>
-    <meta charset="UTF-8" />
-  </head>
-  <body>
-    <header>
-      <nav>
-          <div class="left"><a href="#Home">Soumy's Portfolio</a></div>
-          <div class="right">
-              <ul>
-                  <li><a href="#Home">Home</li></a>
-                  <li><a href="#about-me">About</li></a>
-                  <li><a href="#skill">Skill</li></a>
-                  <li><a href="#projects">Projects</li></a>
-                  <li><a href="#contact-me">Contact Me</li></a>
-              </ul>
-          </div>
-      </nav>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="Me.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Portfolio</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <div class="left"><a href="#Home">Soumy's Portfolio</a></div>
+      <div class="right">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
   </header>
 
   <main>
-      <section class="firstSection" id="Home">
-          <div class="leftSection hidden">
-              Hi! My name is <span class="purple">Soumya</span>
-              <div>and I am a passionate</div>
-              <span id="element"></span>
-              <div class="buttons">
-                  <button class="btn"><a href="./Resume(SJO).pdf" download="Soumya" >Download Resume</a> </button>
-                  <button class="btn"><a href="https://github.com/Soumya-Jagannath-Ojha" target="_main">Visit GitHub</a></button>
-              </div>
-          </div>
-          <div class="rightSection">
-            <img class="headshot" src="SJO.jpeg" alt="Soumya"/>
-          </div>
-      </section>
-    
-      <section class="sub-section" id="about-me">
-          <div class="information hidden">
-              <h1><span id="element">About Me</span></h1>
-              <p>I am a passionate Full Stack Developer who loves to explore new technology and build scalable applications.</p>
-              <br><br>
-              <p>A little bit about my education, I am a 3rd year student of <i>DRIEMS University cuttack , Odisha</i>, pursuing my B.Tech in Computer Science and my current cumulative grade point average is 9.25(till 4th semester)</p>
-          </div>
-          <div class="headshot-container">
-              <img class="headshot" src="Me.jpeg" alt="Soumya"/>
-          </div>
-      </section>
-      <section class="skill" id="skill" >
-        <div><h1><span id="element">Technologies i know</span></h1></div>
-          <div class="container">
-            <div class="first-container hidden">
-              <img src="Tech/Html.jpg" alt="Html" class="item">
-              <img src="Tech/css.png" alt="css" class="item">
-              <img src="Tech/js-logo.webp" alt="js" class="item">
-              <img src="Tech/java.png" alt="java" class="item">
-              <img src="Tech/c++.png" alt="c++" class="item">
-              <img src="Tech/mysql.png" alt="sql" class="item">
-              <img src="Tech/bootstrap.png" alt="boot" class="item">
-            </div>
-              <div class="second-container hidden">
-              <img src="Tech/mongodb.png" alt="mongo" class="item">
-              <img src="Tech/expressjs.png" alt="express" class="item">
-              <img src="Tech/react.png" alt="react" class="item">
-              <img src="Tech/node.png" alt="node" class="item">
-              <img src="Tech/github.png" alt="github" class="item">
-              <img src="Tech/git-logo.png" alt="git" class="item">
-              <img src="Tech/mongo atlas.png" alt="mongodb" class="item">
-              </div>
-              
-          </div>
-      
-    </section>
-      <section class="sub-section-alternative " id="projects">
-          <div><h1><span id="element">Projects i Made</span></h1></div>
-          <div class="project-container hidden">
-              <div class="project-card">
-                  <img class="project-image" src="img/AmazonClone.png" alt="Project One Image"/>
-                  <h3>Amazon Clone</h3>
-                  <p class="subtext">Introducing my Amazon-inspired creation 🚀. Built from passion and innovation. Excited to embark on this journey ..</p>
-                  <hr/>
-                  <p class="subtext"><a class="project-link" href="https://www.linkedin.com/posts/soumya-jagannath-ojha_techinnovation-amazonclone-entrepreneurialspirit-activity-7129176530760400896--P0l?utm_source=share&utm_medium=member_desktop" target="_main">View here</a></p>
-              </div>
-              <div class="project-card">
-                <img class="project-image" src="img/Color Flipper.png" alt="Project One Image"/>
-                <h3>Color Flipper</h3>
-                <p class="subtext">Just flipped the Colours with my Color Flipper project 🎨. Exploring JavaScript magic with hex and simple colors.</p>
-                <hr/>
-                <p class="subtext"><a class="project-link" href="https://www.linkedin.com/posts/soumya-jagannath-ojha_javascriptlearning-codingadventure-activity-7146889022949179392-3AXR?utm_source=share&utm_medium=member_desktop" target="_main">View here</a></p>
-              </div>
-              <div class="project-card">
-                <img class="project-image" src="img/Wanderlust.png" alt="Project One Image"/>
-                <h3>Wanderlust</h3>
-                <p class="subtext">This is my Fullstack Project. I used technology MERN Stack.</p>
-                <hr/>
-                <p class="subtext"><a class="project-link" href="https://fullstack-project-kztl.onrender.com/listings" target="_main">View here</a></p>
-              </div>
-              <div class="project-card">
-                <img class="project-image" src="img/Simon.png" alt="Simon Says"/>
-                <h3>SIMON Says Game</h3>
-                <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
-                <hr/>
-                <p class="subtext"><a class="project-link" href="https://soumya-jagannath-ojha.github.io/Simon-Says/" target="_main">View here</a></p>
-              </div>
-          </div>
-      </section>
 
-      <div class="contact-container" id="contact-me">
-        <h1><span id="element">Let's Talk</span></h1><br>
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-          <input type="hidden" name="access_key" value="37adc9c8-810d-44c9-8d26-f2e4d016ffb0">
-          <input type="text" name="name"  placeholder="Your Full Name" required><br><br>
-          <input type="email" name="email"  placeholder="Your Email id" required><br><br>
-          <textarea name="Subject" cols="98" rows="8" placeholder="Subject"></textarea><br><br>
-          <button class="button">Send</button>
-        </form>
+    <section class="firstSection" id="Home">
+      <div class="leftSection hidden">
+        Hi! My name is <span class="purple">Soumya</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn"><a href="./Resume(SJO).pdf" download="Soumya">Download Resume</a> </button>
+          <button class="btn"><a href="https://github.com/Soumya-Jagannath-Ojha" target="_main">Visit
+              GitHub</a></button>
+        </div>
       </div>
-      
+      <div class="rightSection">
+        <img class="headshot" src="SJO.jpeg" alt="Soumya" />
+      </div>
+    </section>
+
+    <section class="sub-section" id="about-me">
+      <div class="information hidden">
+        <h1><span id="element">About Me</span></h1>
+        <p>I am a passionate Full Stack Developer who loves to explore new technology and build scalable applications.
+        </p>
+        <br><br>
+        <p>A little bit about my education, I am a 3rd year student of <i>DRIEMS University cuttack , Odisha</i>,
+          pursuing my B.Tech in Computer Science and my current cumulative grade point average is 9.25(till 4th
+          semester)</p>
+      </div>
+      <div class="headshot-container">
+        <img class="headshot" src="Me.jpeg" alt="Soumya" />
+      </div>
+    </section>
+
+    <section class="skill" id="skill">
+      <div>
+        <h1><span id="element">Technologies i know</span></h1>
+      </div>
+      <div class="container">
+        <div class="first-container hidden">
+          <img src="Tech/Html.jpg" alt="Html" class="item">
+          <img src="Tech/css.png" alt="css" class="item">
+          <img src="Tech/js-logo.webp" alt="js" class="item">
+          <img src="Tech/java.png" alt="java" class="item">
+          <img src="Tech/c++.png" alt="c++" class="item">
+          <img src="Tech/mysql.png" alt="sql" class="item">
+          <img src="Tech/bootstrap.png" alt="boot" class="item">
+        </div>
+        <div class="second-container hidden">
+          <img src="Tech/mongodb.png" alt="mongo" class="item">
+          <img src="Tech/expressjs.png" alt="express" class="item">
+          <img src="Tech/react.png" alt="react" class="item">
+          <img src="Tech/node.png" alt="node" class="item">
+          <img src="Tech/github.png" alt="github" class="item">
+          <img src="Tech/git-logo.png" alt="git" class="item">
+          <img src="Tech/mongo atlas.png" alt="mongodb" class="item">
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="sub-section-alternative " id="projects">
+      <div>
+        <h1><span id="element">Projects i Made</span></h1>
+      </div>
+      <div class="project-container hidden">
+        <div class="project-card">
+          <img class="project-image" src="img/Wanderlust.png" alt="Project One Image" />
+          <h3>Wanderlust</h3>
+          <p class="subtext">This is my Fullstack Project. I used technology MERN Stack.</p>
+          <hr />
+          <p class="subtext"><a class="project-link" href="https://fullstack-project-kztl.onrender.com/listings"
+              target="_main">View here</a></p>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="img/AmazonClone.png" alt="Project One Image" />
+          <h3>Amazon Clone</h3>
+          <p class="subtext">Introducing my Amazon-inspired creation 🚀. Built from passion and innovation. Excited to
+            embark on this journey ..</p>
+          <hr />
+          <p class="subtext"><a class="project-link"
+              href="https://www.linkedin.com/posts/soumya-jagannath-ojha_techinnovation-amazonclone-entrepreneurialspirit-activity-7129176530760400896--P0l?utm_source=share&utm_medium=member_desktop"
+              target="_main">View here</a></p>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="img/weather.png" alt="Project One Image" />
+          <h3>Weather Widget</h3>
+          <p class="subtext">Built a React application showcasing live city temperatures from API, keeping you informed
+            wherever you are! 🌥️</p>
+          <hr />
+          <p class="subtext"><a class="project-link"
+              href="https://www.linkedin.com/posts/soumya-jagannath-ojha_reactjs-api-weatherapp-activity-7170009525423386624-oZh6?utm_source=share&utm_medium=member_desktop"
+              target="_main">View here</a></p>
+        </div>
+
+        <div class="project-card">
+          <img class="project-image" src="img/Simon.png" alt="Simon Says" />
+          <h3>SIMON Says Game</h3>
+          <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+          <hr />
+          <p class="subtext"><a class="project-link" href="https://soumya-jagannath-ojha.github.io/Simon-Says/"
+              target="_main">View here</a></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-container" id="contact-me">
+      <h1><span id="element">Let's Talk</span></h1><br>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="37adc9c8-810d-44c9-8d26-f2e4d016ffb0">
+        <input type="text" name="name" placeholder="Your Full Name" required><br><br>
+        <input type="email" name="email" placeholder="Your Email id" required><br><br>
+        <textarea name="Subject" cols="98" rows="8" placeholder="Subject"></textarea><br><br>
+        <button class="button">Send</button>
+      </form>
+    </div>
+
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
-
     <script defer src="app.js"></script>
-  </main>
-  </body>
-</html>
 
+  </main>
+</body>
+
+</html>
