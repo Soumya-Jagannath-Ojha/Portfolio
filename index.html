@@ -19,8 +19,8 @@
 <body>
   <header>
 
-    <nav>
-      <div class="left"><a href="#Home">Soumy's Portfolio</a></div>
+    <nav class="nav">
+      <div class="left"><h2><a href="#Home">Soumy's Portfolio</a></h2></div>
       <div class="right">
         <ul>
           <li><a href="#Home">Home</a></li>
@@ -31,6 +31,26 @@
         </ul>
       </div>
     </nav>
+
+    <nav class="hamburger-nav">
+      <div class="logo">
+          <h2>Harry potter</h2>
+      </div>
+
+      <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <div class="menu-links">
+              <li class="nav_item"><a href="" class="topnav_link" onclick="toggleMenu()">Home</a></li>
+              <li class="nav_item"><a href="" class="topnav_link" onclick="toggleMenu()">About</a></li>
+              <li class="nav_item"><a href="" class="topnav_link" onclick="toggleMenu()">Contact</a></li>
+              <li class="nav_item"><a href="" class="topnav_link" onclick="toggleMenu()">Project</a></li>
+          </div>
+      </div>
+  </nav>
 
   </header>
 
